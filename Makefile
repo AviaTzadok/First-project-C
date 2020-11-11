@@ -20,7 +20,6 @@ libmyMath.a: $(OBJECTS_LIB)
 	$(AR) -rcs libmyMath.a $(OBJECTS_LIB)
 libmyMath.so: $(OBJECTS_LIB)
 	$(CC) -shared -o libmyMath.so $(OBJECTS_LIB)
-make maind:
 main.o: main.c myMath.h
 	$(CC) $(FLAGS) -c main.c myMath.h
 power.o: power.c myMath.h
